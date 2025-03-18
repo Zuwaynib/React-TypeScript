@@ -1,5 +1,5 @@
 import Message from './components/Message';
-import CounterButton from './components/CounterButton';
+import CounterButton from './components/CounterButton.tsx';
 
 function App() {
 

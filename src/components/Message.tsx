@@ -1,9 +1,9 @@
 function Message() {
-    const name = "Zuwaynib";
+    const name = "Drax";
 
     return(
         <div>
-            <h1>Hello {name}</h1>
+            <h1>Hello {name ? name : "World"}</h1>
         </div>
     )
 }
