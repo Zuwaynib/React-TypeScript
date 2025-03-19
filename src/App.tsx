@@ -1,13 +1,23 @@
-import ListGroup from './components/ListGroup';
-
+import ListGroup from "./components/ListGroup";
+import Alert from "./components/Alert";
 
 function App() {
+  const items = ["America", "Greece", "Turkey", "Japan", "Paris"];
 
-  return(
+  const handleSelectItem = (item: string) => {
+    console.log(item);
+  };
+
+  return (
     <>
-      <ListGroup />
+      <Alert />
+      <ListGroup
+        items={items}
+        heading="Countries"
+        onSelectItem={handleSelectItem}
+      />
     </>
-  )
+  );
 }
 
 export default App;
