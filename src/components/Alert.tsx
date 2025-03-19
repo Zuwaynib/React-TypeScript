@@ -1,9 +1,19 @@
+import { ReactNode } from "react";
+
 interface Props {
-    text: string;
+  children: ReactNode;
+  onClose: () => void;
 }
 
-const Alert = ({ text }: Props) => {
-  return <div className = "alert alert-danger">{ text}</div>;
+const Alert = ({ children, onClose}: Props) => {
+  return (
+    <>
+      <div className="alert alert-danger alert-dismissible">{children}
+      <button type="button" onClick = {onClose} className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+     
+    </>
+  );
 };
 
 export default Alert;
