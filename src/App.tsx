@@ -1,12 +1,11 @@
-import Message from './components/Message';
-import CounterButton from './components/CounterButton.tsx';
+import ListGroup from './components/ListGroup';
+
 
 function App() {
 
   return(
     <>
-      <Message />
-      <CounterButton />
+      <ListGroup />
     </>
   )
 }
