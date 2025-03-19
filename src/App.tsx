@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <Alert />
+      <Alert text = "Help Me"/>
       <ListGroup
         items={items}
         heading="Countries"
